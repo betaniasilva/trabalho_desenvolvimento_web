@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*faz a pagina ter o efeito de deslizar quando troca*/
+}
+
+body {
+  background-image: url(./img/backgoundjinx.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+footer {
+  color: var(--color-primary);
+  text-align: center;
+  margin: 16px 16px;
+}
+
+:root {
+  --color-primary: rgb(255, 255, 255);
+  --color-secundary: rgba(13, 27, 105, 0.973);
+}
+
+.glass-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.cabecalho {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cabecalho_menu {
+  position: fixed;
+  text-align: right;
+  padding: 1em;
+  z-index: 1;
+  top: 0;
+  padding: 12px;
+  color: var(--color-primary);
+}
+.cabecalho_menu a {
+  text-decoration: none;
+  color: var(--color-primary);
+  /* border: 1px solid var(--color-primary); */
+  padding: 0.5em;
+  display: inline-block;
+  margin: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.cabecalho_menu a:hover {
+  background-color: rgba(3, 47, 128, 0.973);
+  /* backdrop-filter: blur(4px); */
+}
+
+.cabecalho_conteudo {
+  text-align: center;
+  margin-top: 6em;
+  color: var(--color-primary);
+}
+.cabecalho_titulo {
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px rgba(3, 47, 128, 0.973); /* sombreado preto*/
+  font-size: 2.5em;
+  /* margin-bottom: 0.5em; */
+}
+.cabecalho_paragrafo {
+  background-color: rgba(3, 47, 128, 0.301);
+
+  display: inline-block;
+  padding: 0.5em;
+  border-bottom: 2px solid var(--color-primary);
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px 0;
+  padding: 16px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.principal section {
+  width: 1240px;
+}
+
+.principal_conteudo {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding-top: 100px;
+}
+
+.card-game {
+  padding-bottom: 50px;
+  width: 400px;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.card-game .card-game_conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-game img {
+  width: 100%;
+  border-radius: 10px;
+  object-position: center;
+  height: 224px;
+}
+
+.botao {
+  text-decoration: none;
+  color: var(--color-primary);
+  background-color: rgba(3, 47, 128, 0.973);
+  padding: 0.5em;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.botao:hover {
+  background-color: rgba(149, 0, 255, 0.384);
+  backdrop-filter: blur(4px);
+  color: var(--color-primary);
+}
+
+.sobre-nos {
+  padding-bottom: 50px;
+  width: 100%;
+
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.sobre-nos img {
+  width: 100%;
+  border-radius: 10px;
+  object-position: center;
+}
