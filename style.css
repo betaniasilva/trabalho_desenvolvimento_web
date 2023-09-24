@@ -86,7 +86,6 @@ footer {
 }
 .cabecalho_paragrafo {
   background-color: rgba(3, 47, 128, 0.301);
-
   display: inline-block;
   padding: 0.5em;
   border-bottom: 2px solid var(--color-primary);
